@@ -1,10 +1,11 @@
 const testButton = document.getElementById("testButton");
 const responseContainer = document.getElementById("responseContainer");
-//const URLAPI = 
 
 testButton.addEventListener("click", async () => {
+    const URLAPI = document.querySelector('.urlapi')
+    const LinkApi = URLAPI.value
     try {
-        const response = await fetch("https://pokeapi.co/api/v2/pokemon/ditto");
+        const response = await fetch(LinkApi);
         const data = await response.json();
 
         // Limpa o container de resposta antes de exibir a nova resposta
