@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    background-color: #FFEEF4;
+}
+h1 {
+text-align: center;
+margin: 40px 0px;
+}
+.container {
+    background-color: #E4E4D0;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 14px 0px #aec3aed2;
+    border-radius: 10px;
+}
+
+table,
+td {
+    margin: auto;
+  border: 1px solid #333;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
+.nomeServico {
+    padding-right: 200px;
+}
