@@ -1,20 +1,63 @@
-const testButton = document.getElementById("testButton");
-const responseContainer = document.getElementById("responseContainer");
+const resAPI1 = document.querySelector(".resAPI1")
+const resAPI2 = document.querySelector(".resAPI2")
+const resAPI3 = document.querySelector(".resAPI3")
+const resAPI4 = document.querySelector(".resAPI4")
+const resAPI5 = document.querySelector(".resAPI5")
+const resAPI6 = document.querySelector(".resAPI6")
 
-testButton.addEventListener("click", async () => {
-    const URLAPI = document.querySelector('.urlapi')
-    const LinkApi = URLAPI.value
-    try {
-        const response = await fetch(LinkApi);
-        const data = await response.json();
+fetch('https://pokeapi.co/api/v2/pokemon/ditto')
+    .then(response => {
+        //resAPI1.innerHTML = "Está funcionando!";
+        const imgOK = document.createElement('img')
+        imgOK.src = 'imagem/check-img.jpg'
+        resAPI1.appendChild(imgOK)
+    })
+    .catch(error => {
+        //resAPI1.innerHTML = "Não está funcionando!";
+        const imgNOK = document.createElement('img')
+        imgNOK.src = 'imagem/erro-img.png'
+        resAPI1.appendChild(imgNOK)
+    })
 
-        // Limpa o container de resposta antes de exibir a nova resposta
-        responseContainer.innerHTML = "";
+fetch('https:')
+    .then(response => {
+        //resAPI2.innerHTML = "Está funcionando!";
+        const imgOK = document.createElement('img')
+        imgOK.src = 'imagem/check-img.jpg'
+        resAPI2.appendChild(imgOK)
+    })
+    .catch(error => {
+        //resAPI2.innerHTML = "Não está funcionando!";
+        const imgNOK = document.createElement('img')
+        imgNOK.src = 'imagem/erro-img.png'
+        resAPI2.appendChild(imgNOK)
+    })
 
-        // Exibe a resposta da API no container
-        responseContainer.innerHTML = "Está funcionando!";
-    } catch (error) {
-        responseContainer.innerHTML = "Erro ao fazer a requisição.";
-    }
-});
+
+    // const resAPI1 = document.querySelector(".resAPI1");
+    // const resAPI2 = document.querySelector(".resAPI2");
+    // const resAPI3 = document.querySelector(".resAPI3");
+    // const resAPI4 = document.querySelector(".resAPI4");
+    // const resAPI5 = document.querySelector(".resAPI5");
+    // const resAPI6 = document.querySelector(".resAPI6");
+
+    // async function fetchData() {
+    //     try {
+    //         const response = await fetch('https:');  
+    //         //resAPI1.innerHTML = "Está funcionando!";
+            
+    //         const imgOK = document.createElement('img');
+    //         imgOK.src = 'imagem/check-img.jpg';
+    //         resAPI1.appendChild(imgOK);
+    //     } catch (error) {
+    //         //resAPI1.innerHTML = "Não está funcionando!";
+            
+    //         const imgNOK = document.createElement('img');
+    //         imgNOK.src = 'imagem/erro-img.png';
+    //         resAPI1.appendChild(imgNOK);
+    //     }
+    // }
+    
+    // fetchData();
+    
 
