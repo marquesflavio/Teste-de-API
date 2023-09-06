@@ -9,13 +9,13 @@ fetch('https://pokeapi.co/api/v2/pokemon/ditto')
     .then(response => {
         //resAPI1.innerHTML = "Está funcionando!";
         const imgOK = document.createElement('img')
-        imgOK.src = 'imagem/check-img.jpg'
+        imgOK.src = 'imagem/ok.png'
         resAPI1.appendChild(imgOK)
     })
     .catch(error => {
         //resAPI1.innerHTML = "Não está funcionando!";
         const imgNOK = document.createElement('img')
-        imgNOK.src = 'imagem/erro-img.png'
+        imgNOK.src = 'imagem/error.png'
         resAPI1.appendChild(imgNOK)
     })
 
@@ -23,13 +23,13 @@ fetch('https:')
     .then(response => {
         //resAPI2.innerHTML = "Está funcionando!";
         const imgOK = document.createElement('img')
-        imgOK.src = 'imagem/check-img.jpg'
+        imgOK.src = 'imagem/ok.png'
         resAPI2.appendChild(imgOK)
     })
     .catch(error => {
         //resAPI2.innerHTML = "Não está funcionando!";
         const imgNOK = document.createElement('img')
-        imgNOK.src = 'imagem/erro-img.png'
+        imgNOK.src = 'imagem/erro.png'
         resAPI2.appendChild(imgNOK)
     })
 
